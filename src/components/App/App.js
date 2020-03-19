@@ -9,15 +9,13 @@ import Header from '../Header/Header'
 import Movie from '../Movie/Movie'
 import SearchMovie from '../SearchMovie/SearchMovie'
 
-
-
-const movieAPIURL = 'http://www.omdbapi.com/?s=man&apikey=a20929c9'
+const omdbApiKey = process.env.REACT_APP_OMDB_API_KEY
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    axios.get(movieAPIURL)
+    axios.get(`http://www.omdbapi.com/?s=man&apikey=${omdbApiKey}`)
     .then(jsonResponse => {
       dispatch({
         type: 'SEARCH_MOVIES_SUCCESS',
@@ -26,17 +24,12 @@ function App() {
     })
   }, [])
 
-  // refresh page
-  // const refreshPage = () => {
-  //   window.location.reload()
-  // }
-
   const search = searchValue => {
     dispatch({
       type: 'SEARCH_MOVIES'
     })
 
-    axios(`http://www.omdbapi.com/?s=${searchValue}&apikey=a20929c9`)
+    axios.post(`http://www.omdbapi.com/?s=${searchValue}&apikey=${omdbApiKey}`)
     .then(jsonResponse => {
       if(jsonResponse.data.Response === 'True') {
         dispatch({
