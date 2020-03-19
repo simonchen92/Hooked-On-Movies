@@ -15,7 +15,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?s=man&apikey=${omdbApiKey}`)
+    axios.get(`http://www.omdbapi.com/?s=Avengers&apikey=${omdbApiKey}`)
     .then(jsonResponse => {
       dispatch({
         type: 'SEARCH_MOVIES_SUCCESS',
@@ -42,6 +42,7 @@ function App() {
           error: jsonResponse.data.Error
         })
       }
+      console.log(jsonResponse)
     })
   }
 
@@ -65,7 +66,7 @@ function App() {
         <Header text='Hooked On Movies' />
         <SearchMovie search={search} />
         <p className='App-intro'>Sharing a few of my favorite movies</p>
-        <div className="movies">{retreivedMovie()}</div>
+        <div className="movie">{retreivedMovie()}</div>
       </div>
     </div>
   )
