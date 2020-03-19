@@ -54,16 +54,17 @@ function App() {
 
   const { movies, errorMessage, loading } = state
 
-  const retreivedMovie = 
-    loading && !errorMessage ? (
-      <img className="spinner" src={spinner} alt="Loading spinner" />
-    ) : errorMessage ? (
-      <div className="errorMessage">{errorMessage}</div>
-    ) : (
-      movies.map((movie, index) => {
-        return <Movie key={`${index}`} movie={movie} />
-      })
-    )
+  const retreivedMovie = () => {
+  if (loading && !errorMessage) {
+      return <img className="spinner" src={spinner} alt="Loading spinner" />
+  } else if (errorMessage) {
+      return <div className="errorMessage">{errorMessage}</div>
+    } else {
+        return movies.map((movie, index) => {
+          return <Movie key={`${index}`} movie={movie} />
+        })
+    }
+  }
 
   return (
     <div className='App'>
@@ -71,7 +72,7 @@ function App() {
         <Header text='Hooked On Movies' />
         <SearchMovie search={search} />
         <p className='App-intro'>Sharing a few of my favorite movies</p>
-        <div className="movies">{retreivedMovie}</div>
+        <div className="movies">{retreivedMovie()}</div>
       </div>
     </div>
   )
