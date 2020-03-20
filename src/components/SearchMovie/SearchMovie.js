@@ -19,7 +19,7 @@ const Search = (props) => {
     }
 
     return (
-        <form className='SearchForm'>
+        <form className='searchForm'>
             <input
                 value={searchValue}
                 onChange={handleSearchInputChange}
