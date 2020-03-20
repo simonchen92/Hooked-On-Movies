@@ -66,7 +66,7 @@ function App() {
         <Header text='Hooked On Movies' />
         <SearchMovie search={search} />
         <p className='App-intro'>Sharing a few of my favorite movies</p>
-        <div className="movie">{retreivedMovie()}</div>
+        <div className="movies">{retreivedMovie()}</div>
       </div>
     </div>
   )

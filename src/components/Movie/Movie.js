@@ -1,4 +1,5 @@
 import React from 'react'
+import './Movie.scss'
 
 const defaultPlaceholderImage = "https://ak4.picdn.net/shutterstock/videos/6309044/thumb/1.jpg"
 
@@ -14,15 +15,14 @@ const Movie = ({ movie }) => {
     
     return (
         <div className="movie">
-            <h2>{movie.Title}</h2>
+            <h2 className="movie-title">{movie.Title}</h2>
         <div>
             <img
-                width='200'
                 alt={`The movie titled: ${movie.Title}`}
                 src={poster()}
             />
         </div>
-        <p>{movie.Year}</p>
+        <p className="movie-year">{movie.Year}</p>
         </div>
     )
 }

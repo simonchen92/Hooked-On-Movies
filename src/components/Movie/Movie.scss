@@ -1,0 +1,13 @@
+.movie {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    overflow: hidden;
+    width: 33%;
+    img {
+        width: 250px;
+        height: 400px;
+      }
+}
+
