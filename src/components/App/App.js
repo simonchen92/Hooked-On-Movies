@@ -3,7 +3,7 @@ import { reducer, initialState } from '../../store/reducer/index'
 import axios from 'axios'
 import spinner from '../../assets/ajax-loader.gif'
 
-import './App.css';
+import './App.scss';
 
 import Header from '../Header/Header'
 import Movie from '../Movie/Movie'
