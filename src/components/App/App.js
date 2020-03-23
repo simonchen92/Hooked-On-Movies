@@ -15,7 +15,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?s=Avengers&apikey=${omdbApiKey}`)
+    axios.get(`https://www.omdbapi.com/?s=Avengers&apikey=${omdbApiKey}`)
     .then(jsonResponse => {
       dispatch({
         type: 'SEARCH_MOVIES_SUCCESS',
@@ -29,7 +29,7 @@ function App() {
       type: 'SEARCH_MOVIES'
     })
 
-    axios.post(`http://www.omdbapi.com/?s=${searchValue}&apikey=${omdbApiKey}`)
+    axios.post(`https://www.omdbapi.com/?s=${searchValue}&apikey=${omdbApiKey}`)
     .then(jsonResponse => {
       if(jsonResponse.data.Response === 'True') {
         dispatch({
