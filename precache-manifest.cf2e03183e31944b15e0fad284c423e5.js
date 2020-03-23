@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85272ab8b87fd2387d43ef065988e5e0",
+    "revision": "26cb763cd2f500c52bca7e62800fd7b8",
     "url": "/Hooked-On-Movies/index.html"
   },
   {
-    "revision": "afd353c4b7e0392103b3",
+    "revision": "a4a8ad1729ed41128a74",
     "url": "/Hooked-On-Movies/static/css/main.e8fb11a3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Hooked-On-Movies/static/js/2.597d3a6e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "afd353c4b7e0392103b3",
-    "url": "/Hooked-On-Movies/static/js/main.cb566b5a.chunk.js"
+    "revision": "a4a8ad1729ed41128a74",
+    "url": "/Hooked-On-Movies/static/js/main.a0fac699.chunk.js"
   },
   {
     "revision": "6e6e4f8bc0ff3b0e8df9",
