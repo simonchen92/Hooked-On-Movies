@@ -42,7 +42,6 @@ function App() {
           error: jsonResponse.data.Error
         })
       }
-      console.log(jsonResponse)
     })
   }
 
