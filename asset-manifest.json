@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Hooked-On-Movies/static/css/main.e8fb11a3.chunk.css",
+    "main.js": "/Hooked-On-Movies/static/js/main.cb566b5a.chunk.js",
+    "main.js.map": "/Hooked-On-Movies/static/js/main.cb566b5a.chunk.js.map",
+    "runtime-main.js": "/Hooked-On-Movies/static/js/runtime-main.1a9d6aab.js",
+    "runtime-main.js.map": "/Hooked-On-Movies/static/js/runtime-main.1a9d6aab.js.map",
+    "static/js/2.597d3a6e.chunk.js": "/Hooked-On-Movies/static/js/2.597d3a6e.chunk.js",
+    "static/js/2.597d3a6e.chunk.js.map": "/Hooked-On-Movies/static/js/2.597d3a6e.chunk.js.map",
+    "index.html": "/Hooked-On-Movies/index.html",
+    "precache-manifest.42fd3e71ddeac427174bd7804cf50e4f.js": "/Hooked-On-Movies/precache-manifest.42fd3e71ddeac427174bd7804cf50e4f.js",
+    "service-worker.js": "/Hooked-On-Movies/service-worker.js",
+    "static/css/main.e8fb11a3.chunk.css.map": "/Hooked-On-Movies/static/css/main.e8fb11a3.chunk.css.map",
+    "static/js/2.597d3a6e.chunk.js.LICENSE.txt": "/Hooked-On-Movies/static/js/2.597d3a6e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a9d6aab.js",
+    "static/js/2.597d3a6e.chunk.js",
+    "static/css/main.e8fb11a3.chunk.css",
+    "static/js/main.cb566b5a.chunk.js"
+  ]
+}
