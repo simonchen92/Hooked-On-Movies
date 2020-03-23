@@ -1,6 +1,7 @@
 import React from 'react'
 import './Movie.scss'
 
+// adding placeholder image for movies without posters
 const defaultPlaceholderImage = "https://ak4.picdn.net/shutterstock/videos/6309044/thumb/1.jpg"
 
 const Movie = ({ movie }) => {
