@@ -23,6 +23,7 @@ const Search = (props) => {
             <input
                 value={searchValue}
                 onChange={handleSearchInputChange}
+                placeholder='Enter Title Here'
                 type='text'
             />
             <input onClick={searchFunction} value='search' type='submit'/>
