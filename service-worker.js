@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Hooked-On-Movies/precache-manifest.cf2e03183e31944b15e0fad284c423e5.js"
+  "/Hooked-On-Movies/precache-manifest.f3782f6ec693d53ff2c4d26ade27e199.js"
 );
 
 self.addEventListener('message', (event) => {
